@@ -70,19 +70,7 @@
 
 ## 🏗 시스템 구조 (Architecture)
 
-```mermaid
-graph LR
-    User[관리자 (Tablet/PC)] -- Web Browser (PWA) --> Client[React App]
-    Client -- Auth API --> SupabaseAuth[Supabase Auth]
-    Client -- Data Query --> SupabaseDB[(PostgreSQL)]
-    Client -- PDF Upload --> SupabaseStorage[Supabase Storage]
-    
-    subgraph Client Side
-        Input[정보 입력] --> Sign[Canvas 서명]
-        Sign --> Capture[html2canvas]
-        Capture --> PDF[jsPDF 생성]
-    end
-```
+<img width="731" height="361" alt="시스템 구조도 drawio" src="https://github.com/user-attachments/assets/bda775ec-a37f-4a68-bd55-673e9e745640" />
 
 <br/>
 
